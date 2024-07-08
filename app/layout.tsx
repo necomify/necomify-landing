@@ -7,6 +7,7 @@ import { Footer } from "@/components/footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://necomify.com"),
   title: "NECOMIFY - Create your own E-Commerce store in minutes",
   description:
     "Necomify is a modern, fast, and easy-to-use E-Commerce template that helps you build your online store in minutes.",
