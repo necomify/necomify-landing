@@ -1,0 +1,158 @@
+---
+title: "Quick Start"
+description: "Get started with Necomify in minutes."
+---
+
+## Ready to get started?
+
+Great! But first, let's get a few things out of the way.
+
+### What is Necomify, and what is it not?
+
+- ✅ **Necomify** is a simple Next.js E-Commerce starter kit that helps you
+  build your online store with ease. It comes with pre-built pages, without
+  styles, ensuring that you can customize to your needs.
+
+- ❌ **Necomify** is not a full-fledged e-commerce solution. It is a starting point for you to build your store on top of. You can add your own styles, components, and functionality to make it your own.
+
+**Necomify** is not responsible for any legal issues that may arise from using this starter kit. Make sure to comply with all laws and regulations when building your online store.
+
+### Prerequisites
+
+Before you get started, make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [Git](https://git-scm.com/downloads)
+
+If you don't have these installed, run the following commands in your terminal:
+
+<Tabs defaultValue="macos" className="pt-5 pb-1">
+  <TabsList>
+    <TabsTrigger value="macos">macOS</TabsTrigger>
+    <TabsTrigger value="linux">Linux</TabsTrigger>
+  </TabsList>
+  <TabsContent value="macos">
+    ```bash
+    # Install Homebrew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    # Install Git
+    brew install git
+
+    # Install NVM (Node Version Manager)
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+    # Source the bashrc or zshrc file
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+    # Install Node.js
+    nvm install --lts
+
+    # Verify installation
+    node -v
+    npm -v
+    git --version
+    ```
+
+  </TabsContent>
+  <TabsContent value="linux">
+    ```bash
+    # Update the system
+    sudo apt update && sudo apt upgrade -y
+
+    # Install Git & dependencies
+    sudo apt install git curl -y
+
+    # Install NVM (Node Version Manager)
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+    # Source the bashrc or zshrc file
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+    # Install Node.js
+    nvm install --lts
+
+    # Verify installation
+    node -v
+    npm -v
+    git --version
+    ```
+
+  </TabsContent>
+</Tabs>
+
+You should see the version numbers for Node.js, npm, and Git. If you don't see them, try restarting your terminal. If you still don't see them, please refer to the official documentation for [Node.js](https://nodejs.org/en/download/), [Git](https://git-scm.com/downloads), and [NVM](https://github.com/nvm-sh/nvm/).
+
+## Installation
+
+Now that you have the prerequisites installed, let's get started with Necomify.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/necomify/necomify.git your_project_name && cd your_project_name
+```
+
+Make sure to replace `your_project_name` with the name of your project.
+
+### 2. Install dependencies
+
+<Tabs defaultValue="npm">
+  <TabsList>
+    <TabsTrigger value="npm">npm</TabsTrigger>
+    <TabsTrigger value="yarn">yarn</TabsTrigger>
+    <TabsTrigger value="pnpm">pnpm</TabsTrigger>
+  </TabsList>
+  <TabsContent value="npm">
+    ```bash
+    npm install
+    ```
+  </TabsContent>
+  <TabsContent value="yarn">
+    ```bash
+    yarn install
+    ```
+  </TabsContent>
+  <TabsContent value="pnpm">
+    ```bash
+    pnpm install
+    ```
+  </TabsContent>
+</Tabs>
+
+### 3. Start the development server
+
+<Tabs defaultValue="npm">
+  <TabsList>
+    <TabsTrigger value="npm">npm</TabsTrigger>
+    <TabsTrigger value="yarn">yarn</TabsTrigger>
+    <TabsTrigger value="pnpm">pnpm</TabsTrigger>
+  </TabsList>
+  <TabsContent value="npm">
+    ```bash
+    npm run dev
+    ```
+  </TabsContent>
+  <TabsContent value="yarn">
+    ```bash
+    yarn dev
+    ```
+  </TabsContent>
+  <TabsContent value="pnpm">
+    ```bash
+    pnpm dev
+    ```
+  </TabsContent>
+</Tabs>
+
+### 4. Open your browser
+
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000). You should see a welcome page with a link to the documentation.
+
+## Finishing up
+
+Good job! You've successfully set up the Necomify starter kit for your project. Now you can start customizing it to your needs, but first, let's go over a few things you should do before getting to work. Continue by reading the [post setup](/docs/getting-started/post-setup) article to learn more.
