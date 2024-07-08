@@ -3,7 +3,11 @@ export const ROUTES = [
   {
     title: "Getting Started",
     href: "getting-started",
-    items: [{ title: "Introduction", href: "/introduction" }],
+    items: [
+      { title: "Introduction", href: "/introduction" },
+      { title: "Quick Start", href: "/quick-start" },
+      { title: "Post Setup", href: "/post-setup" },
+    ],
   },
 ];
 
