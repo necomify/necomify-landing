@@ -49,8 +49,50 @@ export async function generateMetadata({ params: { slug = [] } }: PageProps) {
   if (!res) return null;
   const { frontmatter } = res;
   return {
-    title: frontmatter.title,
+    metadataBase: new URL("https://necomify.com"),
+    title: "NECOMIFY - " + frontmatter.title,
     description: frontmatter.description,
+    keywords:
+      "E-commerce, Next.js, online store, dropshipping, SaaS, web development, Necomify",
+    authors: [{ name: "Necomify Team" }],
+    creator: "Necomify Team",
+    openGraph: {
+      title: "NECOMIFY - Create your own E-Commerce store in minutes",
+      description:
+        "Necomify is a modern, fast, and easy-to-use E-Commerce template that helps you build your online store in minutes.",
+      url: "https://necomify.com",
+      siteName: "NECOMIFY",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "NECOMIFY E-Commerce Boilerplate",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      site: "@necomify_com",
+      creator: "@necomify_com",
+      title: "NECOMIFY - Create your own E-Commerce store in minutes",
+      description:
+        "Necomify is a modern, fast, and easy-to-use E-Commerce platform that helps you build your online store in minutes.",
+      images: [
+        {
+          url: "/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: "NECOMIFY E-Commerce Boilerplate",
+        },
+      ],
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
 
