@@ -9,7 +9,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "NECOMIFY - Create your own E-Commerce store in minutes",
   description:
-    "Necomify is a modern, fast, and easy-to-use E-Commerce platform that helps you build your online store in minutes.",
+    "Necomify is a modern, fast, and easy-to-use E-Commerce template that helps you build your online store in minutes.",
   keywords:
     "E-commerce, Next.js, online store, dropshipping, SaaS, web development, Necomify",
   authors: [{ name: "Necomify Team" }],
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NECOMIFY - Create your own E-Commerce store in minutes",
     description:
-      "Necomify is a modern, fast, and easy-to-use E-Commerce platform that helps you build your online store in minutes.",
+      "Necomify is a modern, fast, and easy-to-use E-Commerce template that helps you build your online store in minutes.",
     url: "https://necomify.com",
     siteName: "NECOMIFY",
     images: [
